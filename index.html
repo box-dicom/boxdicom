@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Box DICOM: medical images for the cloud</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" href="./favicon.ico">
+
+</head>
+<body class="code-snippets-visible">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <section class="header">
+      <h2 class="title">Box DICOM - medical images for the cloud.</h2>
+      <div class="value-props row">
+        <div class="four columns value-prop">
+          <img class="value-img" src="img/feature-1.png" width="40">
+          Upload images without limit, via your web browser or secure proxy.
+        </div>
+        <div class="four columns value-prop">
+          <img class="value-img" src="img/feature-2.png" width="40">
+          All images and reports can be viewed and edited in our web-based viewer.
+        </div>
+        <div class="four columns value-prop">
+          <img class="value-img" src="img/feature-3.png" width="40">
+          Share your images and reports with referring physicians and patients.
+        </div>
+      </div>
+    </section>
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="#intro">Intro</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#viewer">Viewer</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#import">Import</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#proxy">Proxy</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- What is Box DICOM -->
+    <div class="docs-section" id="intro">
+      <h6 class="docs-header">What is Box DICOM?</h6>
+      <div class="row">
+        <div class="six columns">
+          <p>Box DICOM is a new feature and one part of the Box for Healthcare offering. It allows users to store, view and share DICOM files (X-rays, CT scans, Ultrasounds and MRIs) securely in the cloud. This new feature gives users the ability to share imaging studies across a hospital enterprise, with patients or with referring physicians. The Box DICOM Viewer allows users to view DICOM files on any web browser or mobile device. This new functionality helps improve interoperability and care coordination in healthcare by securely housing clinical imaging studies in the cloud so they can be viewed and shared at the point of care.</p>
+        </div>
+        <div class="six columns">
+          <img src="img/viewer-demo.gif" style="max-width:90%">
+        </div>
+      </div>
+      <p>Medical images have long been siloed inside of enterprise-based clinical software systems that work with the imaging equipment that captures them. The cloud can securely bridge the gap between the equipment that radiologists and technicians use to capture data on site and the people they ultimately need to share that data with. Users of the Box DICOM Viewer will be able to take full advantage of the HIPAA-compliant Box file sharing solution and make use of the DICOM Viewer's diagnostic quality capabilities for measurement and annotations. The Box DICOM Viewer has been cleared by the U.S. Food &amp; Drug Administration (FDA) as a Class II Medical Device and is completely browser-based and zero-footprint. This means it requires no additional products or plugins like Java or Flash and uses HTML5 for viewing.</p>
+    </div>
+
+    <!-- Viewer -->
+    <div class="docs-section" id="viewer">
+      <h6 class="docs-header">Box DICOM Viewer</h6>
+      <p>The Box DICOM Viewer is an <strong>FDA Cleared</strong> Class 2 Medical Device.
+         It is a <strong>zero-footprint</strong> viewer -- no Flash, no Java applets.
+         It is a <strong>universal</strong> viewer that supports all major modalities.
+         The viewer supports all modern web browsers including iOS and Android.</p>
+      <p>Try these live demos:</p>
+      <div class="row">
+        <div class="six columns">
+          <a target="_blank" href="https://cloud.app.box.com/dicom_viewer/27647967368/Patrick_Burgendy_CT_Head_ALL.boxdicom?sharedName=nhhb62dnlne4as4ilypljvr550wlnm5n">
+            <figure style="text-align:center">
+              <img src="img/screenshot-2.png" alt="CT Head" title="CT Head" style="max-width:100%"><br>
+              <figcaption>CT Head</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="six columns">
+          <a target="_blank" href="https://cloud.app.box.com/dicom_viewer/54037803765/study.boxdicom?sharedName=q9yc41p9w8jpezbi6weoafiw23cn08xs">
+            <figure style="text-align:center">
+              <img src="img/screenshot-1.png" alt="SPECT/CT Fusion" title="SPECT/CT Fusion" style="max-width:100%"><br>
+              <figcaption>SPECT/CT Fusion</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+      <p>The Box DICOM Viewer can be embedded in your custom applications.  It can be embedded in an IFrame or directly with the JavaScript SDK.</p>
+<pre>
+<code>&lt;script&gt; 
+box.dicom.createViewer(document.body, { 
+    'accessToken': 'MY_ACCESS_TOKEN', 
+    'studies': [{ 
+        'fileId': 'MY_FILE_ID' 
+    }] 
+}); 
+&lt;/script&gt;
+</code>
+</pre>
+      <p>Learn more:
+        <ul>
+          <li><a target="_blank" href="https://cloud.box.com/DICOMDatasheet">Box DICOM Viewer Data Sheet</a></li>
+          <li><a target="_blank" href="https://cloud.box.com/s/q3pv7rd4h6lxomv5bjoe51usfrqhoyk8">Box DICOM Viewer Demo Video (4 minutes)</a></li>
+          <li><a target="_blank" href="https://cloud.box.com/s/xak32auopogghy42d0tzxqbdslfji2lv">Box DICOM Viewer Demo (60 seconds)</a></li>
+          <li><a target="_blank" href="https://community.box.com/t5/Managing-Your-Content/Box-DICOM-Viewer-Overview/ta-p/12690">Box DICOM Viewer Use Guide</a></li>
+          <li><a target="_blank" href="https://cloud.box.com/s/rpszsnb9qrytuajj0ojstihu3b472kou">Box DICOM for Developers</a></li>
+          <li><a target="_blank" href="https://cloud.app.box.com/s/gt5beooywqm3qgi8physgzlxqic0262f">Box DICOM .boxdicom File Format</a>
+        </ul>
+      </p>
+    </div>
+
+    <!-- Import -->
+    <div class="docs-section" id="import">
+      <h6 class="docs-header">Box DICOM Import</h6>      
+      <div class="row">
+        <div class="five columns">
+          <p>Uploading DICOM to the cloud has never been easier.  The Box DICOM Import tool intelligently crawls through folders and subfolders to find your DICOM data.  It can recognize non-DICOM to avoid uploading unwanted content such as executables.  The resulting files are organized by patient and study details.</p>
+        </div>
+        <div class="seven columns">
+          <img src="img/import-screenshot.png" style="max-width:90%">
+        </div>
+      </div>
+      <p>The Box DICOM Import widget can be embedded in your custom applications using the JavaScript SDK.</p>
+<pre>
+<code>&lt;script&gt; 
+box.dicom.createImportWidget('my-container', {
+    'accessToken': 'MY_ACCESS_TOKEN',
+    'folderId': 'MY_FOLDER_ID'
+});
+&lt;/script&gt;
+</code>
+</pre>
+      <p>Learn more:
+        <ul>
+          <li><a target="_blank" href="https://community.box.com/t5/Managing-Your-Content/Box-DICOM-Viewer-Overview/ta-p/12690">Box DICOM Viewer Use Guide</a></li>
+          <li><a target="_blank" href="https://cloud.box.com/s/rpszsnb9qrytuajj0ojstihu3b472kou">Box DICOM for Developers</a></li>
+          <li><a target="_blank" href="https://cloud.app.box.com/s/gt5beooywqm3qgi8physgzlxqic0262f">Box DICOM .boxdicom File Format</a>
+        </ul>
+      </p>
+    </div>
+
+    <!-- Proxy -->
+    <div class="docs-section" id="proxy">
+      <h6 class="docs-header">Box DICOM Proxy</h6>
+      <p>Box also offers the Box DICOM Proxy, an on-premise application that uploads encryption protected DICOM data to Box, directly from a hospital or medical group's PACS. The Box DICOM Proxy allows users to send DICOM files over the Internet without the need for a Virtual Private Network (VPN).</p>
+      <p>DICOM (Digital Imaging and Communications in Medicine) is the standard for handling, storing, printing, and transmitting information in medical imaging. Many DICOM devices do not natively support secure encryption. Therefore, many providers create a VPN tunnel between their local and remote networks. Unfortunately, VPN's have several problems that make them less desirable:
+        <ul>
+          <li>High setup costs</li>
+          <li>High maintenance costs</li>
+          <li>Fragile and unreliable</li>
+        </ul>
+      </p>
+      <p>By using the Box DICOM Proxy, you eliminate the need for a VPN to transfer or share DICOM files. The following diagram demonstrates how the Box DICOM Proxy securely transmits DICOM files from a hospital or medial group’s PACS to Box:</p>
+      <p>
+        <img src="img/proxy-diagram.png" style="max-width:80%">
+      </p>
+      <p>Learn more:
+        <ul>
+          <li><a target="_blank" href="https://cloud.app.box.com/s/aus2rtq66o022yxwrs174vfcjx5jnehy">Box DICOM Proxy Overview and Guide</a></li>
+          <li><a target="_blank" href="https://cloud.app.box.com/s/80ip7iw0zd58zbtyru9kx58nt0spm121">Box DICOM Proxy Demo Video</a>
+        </ul>
+      </p> 
+    </div>
+
+    <!-- Contact -->
+    <div class="docs-section" id="contact">
+      <h6 class="docs-header">Contact</h6>
+      <p>Ready to get started?  Email <a href="mailto:dicom-sales@box.com">dicom-sales@box.com</a> or call 1.877.729.4269.</p>
+    </div>
+    
+    <div class="docs-section">
+      &copy; Box 2016
+    </div>
+    
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<!-- Scripts
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+<script src="js/site.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
