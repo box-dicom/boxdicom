@@ -1,0 +1,25 @@
+.container {
+  text-align: center;
+}
+figure {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+  width: 192px;
+  height: 284px;
+}
+figure img {
+  width: 192px;
+  height: 192px;
+}
+figcaption {
+  width: 192px;
+  font-size: 10px;
+}
+figcaption a.name {
+  font-size: 12px;
+}
+figcaption a.user {
+  text-decoration: none;
+  color: #888;
+}
