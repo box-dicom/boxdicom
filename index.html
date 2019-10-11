@@ -40,7 +40,7 @@
       <div class="value-props row">
         <div class="four columns value-prop">
           <img class="value-img" src="img/import-icon.png" width="40" alt="Import" title="Import">
-          <strong>Import</strong> clinical imaging studies via your web browser or secure proxy to HIPAA compliant cloud platform.
+          <strong>Import</strong> clinical imaging studies via your web browser to HIPAA compliant cloud platform.
         </div>
         <div class="four columns value-prop">
           <img class="value-img" src="img/share-icon.png" width="40" alt="Share" title="Share">
@@ -60,7 +60,6 @@
           <li class="navbar-item"><a class="navbar-link" href="#intro">Intro</a></li>
           <li class="navbar-item"><a class="navbar-link" href="#viewer">Viewer</a></li>
           <li class="navbar-item"><a class="navbar-link" href="#import">Import</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#proxy">Proxy</a></li>
           <li class="navbar-item"><a class="navbar-link" href="#pricing">Pricing</a></li>
           <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
         </ul>
@@ -109,13 +108,13 @@
       </div>
       <p>The Box DICOM Viewer can be embedded in your custom applications.  It can be embedded in an IFrame or directly with the JavaScript SDK.</p>
 <pre>
-<code>&lt;script&gt; 
-box.dicom.createViewer(document.body, { 
-    'accessToken': 'MY_ACCESS_TOKEN', 
-    'studies': [{ 
-        'fileId': 'MY_FILE_ID' 
-    }] 
-}); 
+<code>&lt;script&gt;
+box.dicom.createViewer(document.body, {
+    'accessToken': 'MY_ACCESS_TOKEN',
+    'studies': [{
+        'fileId': 'MY_FILE_ID'
+    }]
+});
 &lt;/script&gt;
 </code>
 </pre>
@@ -136,7 +135,7 @@ box.dicom.createViewer(document.body, {
 
     <!-- Import -->
     <div class="docs-section" id="import">
-      <h6 class="docs-header">Box DICOM Import</h6>      
+      <h6 class="docs-header">Box DICOM Import</h6>
       <div class="row">
         <div class="five columns">
           <p>Uploading DICOM to the cloud has never been easier.  The Box DICOM Import tool intelligently crawls through folders and subfolders to find your DICOM data.  It can recognize non-DICOM to avoid uploading unwanted content such as executables.  The resulting files are organized by patient and study details.</p>
@@ -147,7 +146,7 @@ box.dicom.createViewer(document.body, {
       </div>
       <p>The Box DICOM Import widget can be embedded in your custom applications using the JavaScript SDK.</p>
 <pre>
-<code>&lt;script&gt; 
+<code>&lt;script&gt;
 box.dicom.createImportWidget('my-container', {
     'accessToken': 'MY_ACCESS_TOKEN',
     'folderId': 'MY_FOLDER_ID'
@@ -160,29 +159,6 @@ box.dicom.createImportWidget('my-container', {
           <li><a target="_blank" href="https://community.box.com/t5/Managing-Your-Content/Box-DICOM-Viewer-Overview/ta-p/12690">Box DICOM Viewer Use Guide</a></li>
           <li><a target="_blank" href="https://cloud.box.com/s/rpszsnb9qrytuajj0ojstihu3b472kou">Box DICOM for Developers</a></li>
           <li><a target="_blank" href="https://cloud.app.box.com/s/gt5beooywqm3qgi8physgzlxqic0262f">Box DICOM .boxdicom File Format</a></li>
-        </ul>
-    </div>
-
-    <!-- Proxy -->
-    <div class="docs-section" id="proxy">
-      <h6 class="docs-header">Box DICOM Proxy</h6>
-      <p>Box also offers the Box DICOM Proxy, an on-premise application that securely uploads protected DICOM data to Box, directly from a hospital or medical group's PACS. The Box DICOM Proxy allows users to send DICOM files over the Internet without the need for a Virtual Private Network (VPN).</p>
-      <p>DICOM (Digital Imaging and Communications in Medicine) is the standard for handling, storing, printing, and transmitting information in medical imaging. Many DICOM devices do not natively support secure encryption. Therefore, many providers create a VPN tunnel between their local and remote networks. Unfortunately, VPN's have several problems that make them less desirable:</p>
-        <ul>
-          <li>High setup costs</li>
-          <li>High maintenance costs</li>
-          <li>Fragile and unreliable</li>
-        </ul>
-      <p>By using the Box DICOM Proxy, you eliminate the need for a VPN to transfer or share DICOM files. The following diagram demonstrates how the Box DICOM Proxy securely transmits DICOM files from a hospital or medial group’s PACS to Box:</p>
-      <p>
-        <img src="img/proxy-diagram.png" style="max-width:80%" alt="Box DICOM Proxy Diagram" title="Box DICOM Proxy Diagram">
-      </p>
-      <p>Learn more:</p>
-        <ul>
-          <li><a target="_blank" href="https://cloud.app.box.com/s/aus2rtq66o022yxwrs174vfcjx5jnehy">Box DICOM Proxy Overview and Guide</a></li>
-          <li><a target="_blank" href="https://www.youtube.com/watch?v=PNnKtu8RK2M">Box DICOM Proxy Demo Video</a></li>
-          <li><a target="_blank" href="https://cloud.box.com/s/a5owizi68cpbhznwu83qrspcy8oyksms">Box DICOM Proxy Installer (exe)</a></li>
-          <li><a target="_blank" href="https://cloud.box.com/s/x68xkgd27driwugevsbbbabdlx893n7d">Box DICOM Conformance Statement</a></li>
         </ul>
     </div>
 
@@ -202,11 +178,11 @@ box.dicom.createImportWidget('my-container', {
       <h6 class="docs-header">Contact</h6>
       <p>For pricing please get in touch with your Box Account Executive or email <a href="mailto:dicom-sales@box.com">dicom-sales@box.com</a> or call us at 1.877.729.4269.</p>
     </div>
-    
+
     <div class="docs-section">
-      &copy; Box 2017
+      &copy; Box <span class="copywrite"></span>
     </div>
-    
+
 
 <!-- End Document
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
