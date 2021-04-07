@@ -1,2 +1,1 @@
-# box-dicom.github.io
-Box DICOM
+# Box DICOM
